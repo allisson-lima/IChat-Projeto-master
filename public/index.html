@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IChat🗨️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Script Font Awesome -->
+    <script src="https://kit.fontawesome.com/115461b4d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container-main">
+
+   
+
+    
+    <div class="container-chat">
+    <!--Titulo-->
+    <h1 class="title"><i class="far fa-comments"></i>Ichat</h1>
+
+   
+    <!--Área principal-->
+    <div class="main">
+        
+        <!--Usuario-->
+        <div class="name">
+            <span><i class="far fa-user"></i></span>
+            <input type="text" id="name-input" value="Digite seu nome aqui!" maxlength="20" class="name-input">
+        </div>
+
+        <!--Mensagens de textos -->
+        <ul class="message-container" id="message-container">
+
+            <!--Balao Esquerdo-->
+            <li class="message-left">
+                <p class="message">
+                    <span></span>
+                </p>                
+            </li>
+
+            <!--Balao Direito-->
+            <li class="message-right">
+                <p class="message">
+                    <span></span>
+                </p>                
+            </li>
+
+            <!--Stutus Conversas-->
+            <li class="message-feedback">
+                <p class="feedback" id="feedback"></p>
+            </li>
+        </ul>
+
+        <!--Área de formulario-->
+        <form class="message-form" id="message-form">
+            
+            <!--textos de messagens-->
+            <input type="text" name="message" id="message-input" class="message-input" placeholder="Escreva">
+
+            <!--Buttons-->
+            <button type="submit" class="send-button">
+                Enviar <span><i class="far fa-paper-plane"></i></span>
+            </button>            
+        </form>      
+    </div>  
+     <h3 class="clients-total" id="client-total">Conectados: 2</h3> 
+</div>
+<div class="container-img"> <img src="images/undraw_Sharing_articles_re_jnkp (1).svg"/> </div>
+</div>
+    <!--Conectados-->
+   
+    
+    <!-- Script app.js -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Script main.js -->
+    <script src="main.js"></script>
+
+    <!-- Script Clound-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
